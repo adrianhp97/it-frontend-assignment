@@ -1,13 +1,22 @@
 import React from 'react';
+
+/** Components */
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import { RouterProvider } from "react-router-dom";
+
+/** Configs */
+import routes from './configs/routes';
+
+/** Utils */
 import reportWebVitals from './reportWebVitals';
+
+/** Styles */
+import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={routes} />
   </React.StrictMode>
 );
 
