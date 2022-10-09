@@ -1,0 +1,19 @@
+.languageWrapper {
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+}
+
+.box img {
+  max-width: 100%;
+  object-fit: cover;
+}

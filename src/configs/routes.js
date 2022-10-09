@@ -1,21 +1,18 @@
 /** Components */
 import Layout from "components/layout";
 
+/** Utils */
+import { createBrowserRouter } from "react-router-dom";
+import rootLoader from "components/layout/loader";
+
 /** Views */
 import Home from "views/home";
 import Error from "views/error";
 
-/** Utils */
-import { createBrowserRouter } from "react-router-dom";
-
-const loader = async () => {
-  return {};
-}
-
 const routes = [
   {
-    path: "",
     element: <Home />,
+    path: "",
   },
 ];
 
@@ -24,7 +21,7 @@ export default createBrowserRouter([
     children: routes,
     element: <Layout />,
     errorElement: <Error />,
-    loader: loader,
+    loader: rootLoader,
     path: "/",
   },
 ]);
