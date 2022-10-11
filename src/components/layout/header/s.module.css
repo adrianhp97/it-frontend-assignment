@@ -1,0 +1,14 @@
+.container {
+  color: #FFFFFF !important;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.container :global(.ant-select) {
+  color: #FFFFFF !important;
+}
+.container :global(.ant-select-selection-item) img,
+.option img {
+  height: 16px;
+  width: 16px;
+}

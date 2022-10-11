@@ -1,7 +1,15 @@
 .container {
-  min-height: 100vh;
+  min-height: 100vh !important;
 }
-.container.center {
+.content {
+  padding: 24px;
+  padding-top: calc(64px + 24px);
+}
+.contentWrapper {
+  background: #FFFFFF;
+  padding: 24px;
+}
+.center {
   align-items: center;
   display: flex;
   justify-content: center;
