@@ -1,5 +1,5 @@
 /** Components */
-import { Avatar, List, Spin } from "antd";
+import { Avatar, Empty, List, Spin } from "antd";
 
 /** Configs */
 import STORAGE_KEY from "configs/storage";
@@ -43,7 +43,7 @@ export default function Home() {
   ) : (
     <List>
       {
-        data.map(({ comments_count: commentsCount, email, id, image, name, website }) => (
+        data.length ? data.map(({ comments_count: commentsCount, email, id, image, name, website }) => (
           <List.Item key={id}>
             <List.Item.Meta
               avatar={<Avatar src={image} />}
@@ -52,7 +52,7 @@ export default function Home() {
             />
             <div>Comment {commentsCount}</div>
           </List.Item>
-        ))
+        )) : <Empty />
       }
     </List>
   )
