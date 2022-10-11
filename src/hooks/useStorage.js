@@ -9,7 +9,6 @@ export const useStorage = () => {
 
   useEffect(() => {
     function changeStorage() {
-      console.log(getAll());
       setStorage(getAll());
     }
     window.addEventListener("storage", changeStorage);

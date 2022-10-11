@@ -27,7 +27,6 @@ export default function Header() {
         bordered={false}
         value={storage[STORAGE_KEY.language]}
         onChange={(value) => {
-          console.log(value)
           set(STORAGE_KEY.language, value)
         }}
       >
